@@ -18,12 +18,14 @@
 
 ### Part 3
   Find a multiplicative inverse modulo 9 of each of the following integers.
+  
     (a) 1
     (b) 5
     (c) 7
     (d) 16
 
   Show that each of the following integers doesn't have a multiplicative inverse modulo 9. 
+  
     (a) 0
     (b) 6
     (c) 18
