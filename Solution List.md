@@ -17,7 +17,6 @@
     r = int(input("What is the initial remainder? "))
 
     while r != 0:
-      prev_q = q
       prev_r = r
       r = q - ((q // r) * r)
       q = prev_r
