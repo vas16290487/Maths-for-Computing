@@ -25,5 +25,6 @@
   ```
   
 ### Part 2
-  a) This task asks for the sum of all numbers in a n<sup>th</sup> term range of numbers.
-    n<sup>th</sup> term: 
+  a) 42 ( 1 + 42 ) / 2 =  
+   = 24 x 43 =  
+   = 1032  
