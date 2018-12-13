@@ -34,7 +34,7 @@
   
   b) 6 * ( 1 - 1.05 ^ 26 ) / ( 1 - 1.05 ) =  
    = 6 * ( 1 - 1.05 ^ 26 ) / 0.05 =  
-   = 306.68 minutes (2dp) =
+   = 306.68 minutes (2dp) =  
    = 18401 seconds (nearest second)
    
 ### Part 3
