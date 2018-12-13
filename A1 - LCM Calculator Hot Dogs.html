@@ -29,14 +29,17 @@ You should order:
 
 <script>
 
-servings = Number(document.getElementById("servings").value);
-dogs = Number(document.getElementById("dogs").value);
-buns = Number(document.getElementById("buns").value);
+dom_servings = document.getElementById("servings");
+dom_dogs = document.getElementById("dogs");
+dom_buns = document.getElementById("buns");
 
-resultDogs = document.getElementById("dogsPackages");
-resultBuns = document.getElementById("bunsPackages");
+dom_resultDogs = document.getElementById("dogsPackages");
+dom_resultBuns = document.getElementById("bunsPackages");
 
 function Calculate() {
+	servings = Number(dom_servings.value);
+	dogs = Number(dom_dogs.value);
+	buns = Number(dom_buns.value);
 	if (dogs > buns) {
 		quotient = dogs;
 		remainder = buns;
@@ -59,8 +62,8 @@ function Calculate() {
 		resultServings *= Math.ceil(servings / resultServings);
 	}
 	
-	resultDogs.innerHTML = resultServings / dogs;
-	resultBuns.innerHTML = resultServings / buns;
+	dom_resultDogs.innerHTML = resultServings / dogs;
+	dom_resultBuns.innerHTML = resultServings / buns;
 }
 
 </script>
