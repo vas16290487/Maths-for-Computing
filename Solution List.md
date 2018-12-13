@@ -32,14 +32,11 @@
    = 24 x 43 =  
    = 1032p = £10.32  
   
-  b) 5% x 25 = 0.05 x 25 = 1.25
-  
-  6 + 1.25 = 7.25
-  
-  (26/2)(6+7.25) =  
-  = 13 x 13.25 =  
-  = 172.25 minutes = 10,335 seconds
-  
+  b) 6 * ( 1 - 1.05 ^ 26 ) / ( 1 - 1.05 ) =  
+   = 6 * ( 1 - 1.05 ^ 26 ) / 0.05 =  
+   = 306.68 minutes (2dp) =
+   = 18401 seconds (nearest second)
+   
 ### Part 3
 
 Formula for multiplicative inverse operations: a x b MOD c = 1
