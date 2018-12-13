@@ -1,7 +1,10 @@
 # Solutions
 
 ### Part 1
-  a)
+  a) Since the brief asked for an app, here are some links corresponding to this app:
+  
+  - [source code](https://github.com/vas16290487/Maths-for-Computing/blob/Maths-Changes/A1%20-%20LCM%20Calculator%20Hot%20Dogs.html)
+  - [app preview](https://htmlpreview.github.io/?https://github.com/vas16290487/Maths-for-Computing/blob/Maths-Changes/A1%20-%20LCM%20Calculator%20Hot%20Dogs.html)
   
   b) Euclid's algorithm for the numbers 288 and 660:
   <pre>
