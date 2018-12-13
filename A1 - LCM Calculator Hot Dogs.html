@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<style>
+.gc {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 200px 200px;
+}
+</style>
+</head>
+<body>
+<h1>Hot Dogs and Buns Calculator</h1>
+
+<div class="gc">
+<div>Minimum number of servings: </div>	<div><input type="number" id="servings" value="1" min="1"></div>
+<div>Hot dogs per package: </div>		<div><input type="number" id="dogs" value="8" min="1"></div>
+<div>Buns per package: </div>			<div><input type="number" id="buns" value="12" min="1"></div>
+<div><button type="button" onclick="Calculate()">Calculate</button></div>
+</div>
+&nbsp;
+<div>
+You should order:
+<ul>
+<li><span id="dogsPackages">0</span> packages of hot dogs</li>
+<li><span id="bunsPackages">0</span> packages of buns</li>
+</ul>
+</div>
+
+<script>
+
+dom_servings = document.getElementById("servings");
+dom_dogs = document.getElementById("dogs");
+dom_buns = document.getElementById("buns");
+
+dom_resultDogs = document.getElementById("dogsPackages");
+dom_resultBuns = document.getElementById("bunsPackages");
+
+function Calculate() {
+	servings = Number(dom_servings.value);
+	dogs = Number(dom_dogs.value);
+	buns = Number(dom_buns.value);
+	if (dogs > buns) {
+		quotient = dogs;
+		remainder = buns;
+	} else if (dogs < buns) {
+		quotient = buns;
+		remainder = dogs;
+	} else if (dogs === buns) {
+		quotient = remainder = dogs;
+	}
+	
+	while (remainder != 0) {
+		prev_remainder = remainder;
+		remainder = quotient % remainder;
+		quotient = prev_remainder;
+	}
+	
+	resultServings = dogs * buns / prev_remainder;
+	
+	if (resultServings < servings) {
+		resultServings *= Math.ceil(servings / resultServings);
+	}
+	
+	dom_resultDogs.innerHTML = resultServings / dogs;
+	dom_resultBuns.innerHTML = resultServings / buns;
+}
+
+</script>
+
+</body>
+</html>
